@@ -1,9 +1,3 @@
-.cotainer {
-    width:400px;
-    display: flex;
-    flex-direction: column;
-}
-
 .header {
     width: 400px;
     height: 100px;
@@ -13,12 +7,11 @@
 
 .white {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     background-color: white;
     padding: 10px;
     display: flex;
-    margin-top: 10px;
 }
 
 .purple {
@@ -41,8 +34,11 @@
     height: 250px;
     background: #2563eb;
     display: flex;
-    flex-direction: column; 
-    justify-content: space-evenly; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    box-sizing: border-box;
 }
 
 .main-left {
@@ -52,12 +48,15 @@
 }
 
 .orange-box {
-    width: 140px;  
-    height: 40px; 
+    width: 140px;
+    height: 40px;
     background: #ff863f;
     border: 5px solid white;
     margin-left: 40px;
-    box-sizing:border-box;
+}
+
+.orange-box:first-child {
+    margin-top: 40px;
 }
 
 .footer {
